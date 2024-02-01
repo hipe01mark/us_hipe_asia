@@ -4,7 +4,8 @@
 /public/assets
 /coverage
 /public/css
-/public/js
+/public/ts
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 .env

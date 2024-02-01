@@ -12,7 +12,7 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
-mix.ts('resources/js/app.ts', 'public/js')
+mix.ts('resources/ts/app.ts', 'public/ts')
     .sass('resources/scss/app.scss', 'public/css')
     .options({
         postCss: [ tailwindcss('./tailwind.config.ts') ],
