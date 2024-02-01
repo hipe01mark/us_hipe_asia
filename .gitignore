@@ -5,6 +5,7 @@
 /coverage
 /public/css
 /public/ts
+/public/vendor
 /public/mix-manifest.json
 /storage/*.key
 /vendor
