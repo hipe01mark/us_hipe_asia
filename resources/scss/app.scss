@@ -3,19 +3,3 @@
 @tailwind utilities;
 
 @import './layouts/';
-
-.test {
-    @apply m-2 text-center;
-
-    &__view-more {
-        @apply underline;
-    }
-
-    &__text-input {
-        @apply border-solid border-white
-    }
-
-    &--is-inactive {
-        @apply text-gray-50;
-    }
-}
