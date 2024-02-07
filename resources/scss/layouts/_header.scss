@@ -16,13 +16,17 @@
             @apply flex;
         }
 
-        &__item {
+        a {
             @apply text-white uppercase hover:underline font-semibold text-lg;
         }
     }
 
     &__button {
-        @apply hidden text-white border border-white uppercase hover:bg-blue-800 font-medium rounded-lg text-base px-4 py-2 text-center;
+        @apply hidden text-red-600 border border-red-600 uppercase font-medium rounded-lg text-base px-4 py-2 text-center;
+
+        &:hover {
+            @apply bg-red-600 text-white border-white;
+        }
 
         @screen md {
             @apply flex;
@@ -36,20 +40,22 @@
     &__side-nav {
         @apply lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50;
 
-        &__container {
-            @apply fixed inset-y-0 right-0 w-56 bg-gray-900 overflow-y-auto z-50;
+    }
 
-            &__header {
-                @apply flex items-center justify-between px-4 py-6 text-white;
-            }
+    &__container {
+        @apply fixed inset-y-0 right-0 w-56 bg-gray-900 overflow-y-auto z-50;
 
-            &__items {
-                @apply px-7 py-4;
+        button {
+            @apply flex items-center justify-between px-4 py-6 text-white;
+        }
 
-                &__link {
-                    @apply text-white text-[1.25rem] hover:text-gray-300 block px-4 py-3;
-                }
-            }
+    }
+
+    &__items {
+        @apply px-7 py-4;
+
+        a {
+            @apply text-white text-[1.25rem] hover:text-gray-300 block px-4 py-3;
         }
     }
 }
