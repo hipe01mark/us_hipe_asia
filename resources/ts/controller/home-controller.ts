@@ -1,5 +1,10 @@
+import HomeView from "../view/home-view";
+
 export default class HomeController {
-  constructor() {
+  public homeView: HomeView;
+
+  constructor(homeView: HomeView) {
+    this.homeView = homeView;
     this.headerEventListeners();
   }
 
@@ -10,20 +15,8 @@ export default class HomeController {
     const body = document.body;
 
     if (openSidebarBtn && closeSidebarBtn && mobileSidebar) {
-      openSidebarBtn.addEventListener('click', () => this.openSidebar(mobileSidebar, body));
-      closeSidebarBtn.addEventListener('click', () => this.closeSidebar(mobileSidebar, body));
+      openSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(true, mobileSidebar, body));
+      closeSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(false, mobileSidebar, body));
     }
-  }
-
-  private openSidebar(mobileSidebar: HTMLElement, body: HTMLElement) {
-    mobileSidebar.classList.remove('hidden');
-    mobileSidebar.classList.add('visible');
-    body.classList.add('overflow-hidden');
-  }
-
-  private closeSidebar(mobileSidebar: HTMLElement, body: HTMLElement) {
-    mobileSidebar.classList.remove('visible');
-    mobileSidebar.classList.add('hidden');
-    body.classList.remove('overflow-hidden');
   }
 }
