@@ -11,4 +11,19 @@ export default class HomeView {
             body.classList.remove('overflow-hidden');
         }
     }
+
+    public changeHeaderBackground(scrolled: boolean) {
+        let header = document.querySelector('header'),
+            headerLogo = header?.querySelector('img');
+
+        if (header && headerLogo) {
+            if (scrolled) {
+                header.classList.add('l-header--scrolled');
+                headerLogo.src = '/assets/images/logo_hipe.webp';
+            } else {
+                header.classList.remove('l-header--scrolled');
+                headerLogo.src = '/assets/images/logo_hipe_black.webp';
+            }
+        }
+    }
 }
