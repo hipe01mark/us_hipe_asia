@@ -1,10 +1,10 @@
-import HeaderView from '../view/header-view';
+import HomeView from "../view/home-view";
 
 export default class HomeController {
-  private headerView: HeaderView;
+  public homeView: HomeView;
 
-  constructor() {
-    this.headerView = new HeaderView();
+  constructor(homeView: HomeView) {
+    this.homeView = homeView;
     this.headerEventListeners();
   }
 
@@ -15,8 +15,8 @@ export default class HomeController {
     const body = document.body;
 
     if (openSidebarBtn && closeSidebarBtn && mobileSidebar) {
-      openSidebarBtn.addEventListener('click', () => this.headerView.openSidebar(mobileSidebar, body));
-      closeSidebarBtn.addEventListener('click', () => this.headerView.closeSidebar(mobileSidebar, body));
+      openSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(true, mobileSidebar, body));
+      closeSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(false, mobileSidebar, body));
     }
   }
 }
