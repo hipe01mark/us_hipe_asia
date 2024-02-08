@@ -6,9 +6,11 @@ export default class HomeController {
   constructor(homeView: HomeView) {
     this.homeView = homeView;
     this.headerEventListeners();
+    this.changeBackgroundWhenScrolled();
   }
 
   private headerEventListeners() {
+
     const openSidebarBtn = document.getElementById('hamburger');
     const closeSidebarBtn = document.getElementById('closeSidebar');
     const mobileSidebar = document.getElementById('mobileSidebar');
@@ -18,5 +20,12 @@ export default class HomeController {
       openSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(true, mobileSidebar, body));
       closeSidebarBtn.addEventListener('click', () => this.homeView.toggleSidebar(false, mobileSidebar, body));
     }
+  }
+
+  private changeBackgroundWhenScrolled() {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY > 0;
+      this.homeView.changeHeaderBackground(scrolled);
+    });
   }
 }

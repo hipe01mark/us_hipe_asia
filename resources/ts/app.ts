@@ -1,10 +1,10 @@
 import HomeController from "./controller/home-controller";
-import HeaderView from "./view/home-view";
+import HomeView from "./view/home-view";
 
 const initializeApp = () => {
-    const headerView = new HeaderView();
+    const homeView = new HomeView();
 
-    window.HomeControllerInstance = new HomeController(headerView);
+    window.HomeControllerInstance = new HomeController(homeView);
 };
 
 window.addEventListener('load', initializeApp);

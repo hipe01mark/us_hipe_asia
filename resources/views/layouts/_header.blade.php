@@ -1,6 +1,6 @@
 <header class="l-header">
     <a href="/">
-        <img class="l-header__image" src="{{ asset('assets/images/logo_hipe.webp') }}" alt="HiPE logo" width="100%"
+        <img class="l-header__image" src="{{ asset('assets/images/logo_hipe_black.webp') }}" alt="HiPE logo" width="100%"
             height="100%">
     </a>
     <nav class="l-header__nav">
