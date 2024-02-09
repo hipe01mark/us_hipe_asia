@@ -1,5 +1,5 @@
 .l-header {
-    @apply px-6 py-4 sticky top-0 z-20 flex items-center justify-between;
+    @apply px-6 py-4 fixed top-0 z-20 flex items-center justify-between w-full;
 
     @screen md {
         @apply px-10;
