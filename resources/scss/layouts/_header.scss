@@ -1,6 +1,24 @@
 .l-header {
     @apply px-6 py-4 fixed top-0 z-20 flex items-center justify-between w-full;
 
+    &--scrolled {
+        @apply bg-gray-900;
+
+        .l-header__nav {
+            a {
+                @apply text-white;
+            }
+        }
+
+        .l-header__button {
+            @apply text-white border-white;
+        }
+
+        .l-header__side-btn {
+            @apply text-white;
+        }
+    }
+
     @screen md {
         @apply px-10;
     }
@@ -57,23 +75,5 @@
         a {
             @apply text-white text-[1.25rem] hover:text-gray-300 block px-4 py-3;
         }
-    }
-}
-
-.l-header--scrolled {
-    @apply bg-gray-900;
-
-    .l-header__nav {
-        a {
-            @apply text-white;
-        }
-    }
-
-    .l-header__button {
-        @apply text-white border-white;
-    }
-
-    .l-header__side-btn {
-        @apply text-white;
     }
 }

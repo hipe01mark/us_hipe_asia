@@ -1,0 +1,27 @@
+.c-animate {
+    &--underlined {
+        color: inherit;
+        text-underline-offset: var(--offset, 0.2em);
+        text-decoration: underline 0.10em;
+        transition: --offset 400ms, text-decoration-color 400ms;
+
+        &:hover,
+        &:focus {
+            @apply decoration-primary;
+            --offset: 0.4em;
+        }
+    }
+}
+
+@supports not (background: paint(something)) {
+    .c-animate {
+        &--underlined {
+            transition: text-underline-offset 400ms, text-decoration-color 400ms;
+
+            &:hover,
+            &:focus {
+                @apply underline-offset-[0.4em];
+            }
+        }
+    }
+}

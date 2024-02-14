@@ -1,0 +1,9 @@
+.c-chips {
+    @apply 
+    flex rounded-full bg-primary uppercase px-2 py-1 
+    text-xs tracking-wider font-bold mr-3;
+
+    &__desc {
+        @apply text-left text-sm md:text-base flex-auto;
+    }
+}

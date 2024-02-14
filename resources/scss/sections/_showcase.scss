@@ -1,0 +1,47 @@
+.s-showcase {
+    @apply relative;
+
+    &__image {
+        background-image: url('~/assets/images/showcase/homepage.jpg');
+        @apply w-full max-h-full bg-cover bg-fixed bg-center object-cover h-[100vh];
+
+        @screen md {
+            @apply max-w-full  max-h-screen h-[100vh];
+        }
+    }
+
+    &__opacity {
+        @apply absolute inset-0 bg-black opacity-30;
+    }
+
+    &__trial {
+        @apply 
+        p-2 bg-gray-900 items-center w-fit
+        leading-none rounded-full inline-flex mb-3;
+    }
+
+    &__banner {
+        @apply
+        mt-5 absolute inset-0 text-white flex flex-col justify-center;
+
+        h1 {
+            @apply text-[2rem]/[2.75rem] lg:text-[2.875rem]/[1.2] xl:w-[60%] w-full font-bold;
+        }
+
+        p {
+            @apply text-[1.20rem]/[1.75rem] lg:text-[1.4rem] mt-5 xl:w-2/4 w-full;
+        }
+    }
+
+    &__actions {
+        @apply flex flex-row gap-2 items-center mt-2;
+
+        button {
+            @apply mt-3 c-buttons uppercase;
+        }
+
+        a {
+            @apply text-lg c-animate--underlined;
+        }
+    }
+}
