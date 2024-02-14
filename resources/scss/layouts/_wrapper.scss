@@ -2,7 +2,7 @@
     @apply relative w-full mx-auto;
     
     &--fluid {
-        @apply mx-auto px-10 md:px-[10rem] xl:px-[13rem];
+        @apply mx-auto px-10 md:px-[6rem] xl:px-[12rem];
     }
 
     &--padded-y {
