@@ -1,0 +1,132 @@
+.s-clients {
+    @apply min-h-screen flex items-center justify-center bg-white;
+
+    &__icon {
+        @apply absolute size-20 -top-[10%] left-[3%] p-2 bg-gray-800 rounded-full items-center;
+        z-index: 1;
+
+        @screen sm {
+            @apply size-28 -top-[5%] left-[5%] p-4 block;
+        }
+
+        @screen md {
+            @apply -top-[7%] left-[7%];
+        }
+
+        @screen lg {
+            @apply size-32 p-5 -top-[17%] left-[12%];
+        }
+
+        @screen 2xl {
+            @apply size-36 p-6 left-[10%];
+        }
+    }
+
+    &__background {
+        @apply absolute inset-x-0 inset-y-20 bg-[#F1F1F1] w-[100%] h-[76%];
+        z-index: 0;
+
+        @screen sm {
+            @apply inset-x-3 inset-y-7 w-[83%] h-[90%];
+        }
+
+        @screen md {
+            @apply inset-x-8 inset-y-6 w-[80%] h-[90%];
+        }
+
+        @screen lg {
+            @apply absolute inset-x-20 -inset-y-6 bg-[#F1F1F1] w-[70%] h-[110%];
+        }
+
+        @screen xl {
+            @apply absolute inset-x-36 -inset-y-10 bg-[#F1F1F1] w-[75%] h-[115%];
+        }
+    }
+
+    &__container {
+        @apply flex items-center flex-col justify-center w-full sm:flex-row sm:gap-9 md:gap-12 lg:gap-16 2xl:gap-40;
+    }
+
+    &__label {
+        @apply text-gray-800 z-10 ml-0 sm:ml-4 md:ml-2;
+
+        h1 {
+            @apply uppercase font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl sm:mb-6;
+        }
+
+        p {
+            @apply hidden lg:block lg:text-sm 2xl:text-lg;
+            text-align: justify;
+        }
+
+        button {
+            @apply hidden uppercase text-base text-white font-medium bg-primary rounded-full mt-4 py-2 px-6 sm:block sm:text-base lg:text-lg;
+
+            &:hover {
+                @apply bg-gray-800;
+            }
+        }
+    }
+
+    &__insight {
+        @apply py-7 grid;
+
+        &-content {
+            @apply w-[15rem] flex flex-col sm:w-[27rem] md:w-[28rem] lg:w-[32rem] 2xl:w-[48rem];
+
+            .card {
+                @apply bg-white w-64 shadow-gray-400 shadow-md border border-gray-200;
+
+                .image-content {
+                    @apply flex flex-col items-center py-6 relative px-7;
+
+                    .overlay {
+                        @apply bg-primary absolute left-0 top-0 h-full w-full rounded-bl-2xl border-none;
+                    }
+
+                    .overlay::before,
+                    .overlay::after {
+                        @apply bg-primary absolute right-0 -bottom-10 h-10 w-10 border-none;
+                        content: '';
+                    }
+
+                    .overlay::after {
+                        @apply bg-white;
+                        border-radius: 0 25px 0 0;
+                    }
+                }
+
+                &-image {
+                    @apply relative h-[90px] w-[90px] rounded-full bg-white p-1;
+
+                    @screen lg {
+                        @apply h-[110px] w-[110px];
+                    }
+
+                    .card-img {
+                        @apply h-full w-full object-cover rounded-full border-2 border-solid border-primary;
+                    }
+                }
+
+                &-content {
+                    @apply flex flex-col items-start px-2 py-4;
+
+                    .name {
+                        @apply text-base text-gray-800 font-semibold;
+                    }
+
+                    .description {
+                        @apply text-xs text-gray-800 mb-4 sm:text-xs lg:text-sm;
+                        text-align: justify;
+                        hyphens: auto;
+                        z-index: 1;
+                    }
+
+                    h3 {
+                        @apply text-xs text-gray-600 italic;
+                    }
+                }
+            }
+        }
+    }
+}
