@@ -1,8 +1,8 @@
 .l-footer {
-    @apply absolute bottom-0 w-full bg-gray-900;
+    @apply relative bottom-0 w-full bg-gray-900;
 
     &__container {
-        @apply flex flex-col justify-between items-center;
+        @apply flex flex-col justify-between items-center gap-4;
 
         @screen lg {
             @apply flex-row items-center;
@@ -55,10 +55,6 @@
         a {
             @apply pb-4;
         }
-    }
-
-    .wrapper {
-        @apply mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8;
     }
 
     &__copyright {

@@ -1,15 +1,11 @@
-@tailwind utilities;
+.l-wrapper {
+    @apply relative w-full mx-auto;
+    
+    &--fluid {
+        @apply mx-auto px-10 md:px-[10rem] xl:px-[13rem];
+    }
 
-@layer utilities {
-    .l-wrapper {
-        @apply container;
-        
-        &--fluid {
-            @apply mx-auto px-5;
-        }
-
-        &--padded-y {
-            @apply py-8
-        }
+    &--padded-y {
+        @apply py-8
     }
 }

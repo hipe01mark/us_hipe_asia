@@ -1,4 +1,4 @@
-<header class="l-header">
+<header class="l-header l-wrapper l-wrapper--fluid">
     <a href="/">
         <img class="l-header__image" src="{{ asset('assets/images/logo_hipe_black.webp') }}" alt="HiPE logo" width="100%"
             height="100%">
