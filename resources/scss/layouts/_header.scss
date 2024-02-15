@@ -1,5 +1,9 @@
+header {
+    @apply fixed py-5 top-0 z-20 w-full;
+}
+
 .l-header {
-    @apply px-6 py-4 fixed top-0 z-20 flex items-center justify-between w-full;
+    @apply flex items-center justify-between;
 
     &--scrolled {
         @apply bg-gray-900;
@@ -11,7 +15,7 @@
         }
 
         .l-header__button {
-            @apply text-white border-white;
+            @apply text-primary border-primary;
         }
 
         .l-header__side-btn {
@@ -23,8 +27,12 @@
         @apply px-10;
     }
 
+    &__left {
+        @apply flex items-center justify-between gap-7 md:gap-24;
+    }
+
     &__image {
-        @apply object-contain h-16 w-24;
+        @apply object-contain h-20 w-28;
     }
 
     &__nav {
@@ -35,15 +43,15 @@
         }
 
         a {
-            @apply text-black uppercase hover:underline font-semibold text-lg;
+            @apply text-white uppercase hover:underline font-medium text-lg;
         }
     }
 
     &__button {
-        @apply hidden text-red-600 border border-red-600 uppercase font-medium rounded-lg text-base px-4 py-2 text-center;
+        @apply hidden text-white border border-white uppercase font-medium rounded-lg text-base px-4 py-2 text-center;
 
         &:hover {
-            @apply bg-red-600 text-white border-white;
+            @apply bg-primary text-white border-white;
         }
 
         @screen md {
@@ -52,7 +60,7 @@
     }
 
     &__side-btn {
-        @apply md:hidden focus:outline-none text-gray-900;
+        @apply md:hidden focus:outline-none text-white;
     }
 
     &__side-nav {
