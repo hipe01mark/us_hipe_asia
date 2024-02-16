@@ -22,7 +22,7 @@ export default class HomeView {
                 headerLogo.src = '/assets/images/logo_hipe.webp';
             } else {
                 header.classList.remove('l-header--scrolled');
-                headerLogo.src = '/assets/images/logo_hipe_black.webp';
+                headerLogo.src = '/assets/images/logo_hipe.webp';
             }
         }
     }
