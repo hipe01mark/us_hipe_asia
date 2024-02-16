@@ -97,3 +97,11 @@
         </div>
     </div>
 </section>
+
+@section('custom-scripts')
+    <script>
+        window.addEventListener('load', () => {
+            ClientControllerInstance.initSwiper();
+        });
+    </script>
+@endsection

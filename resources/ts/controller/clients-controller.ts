@@ -9,7 +9,6 @@ export default class ClientsController {
 
     constructor() {
         this.mySwiper = null;
-        this.initSwiper();
     }
 
     private initSwiper() {
