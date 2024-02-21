@@ -1,26 +1,16 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Swiper from '../init/swiper.js';
+import { Autoplay } from 'swiper/modules';
 
 export default class ClientsController {
-    private mySwiper: Swiper | null;
-
-    constructor() {
-        this.mySwiper = null;
-    }
-
-    private initSwiper() {
-        console.log('test');
-        this.mySwiper = new Swiper('.s-clients__insight-content', {
+    public initSwiper() {
+        new Swiper('.s-clients__insight-content', {
+            modules: [Autoplay],
             centeredSlides: false,
             spaceBetween: 15,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: false,
             },
-            modules: [Navigation, Pagination],
             loop: true,
             autoplay: {
                 delay: 2000,
@@ -39,12 +29,5 @@ export default class ClientsController {
                 }
             },
         });
-    }
-
-    destroySwiper() {
-        if (this.mySwiper) {
-            this.mySwiper.destroy();
-            this.mySwiper = null;
-        }
     }
 }

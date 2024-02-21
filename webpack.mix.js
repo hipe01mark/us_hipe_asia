@@ -12,10 +12,22 @@ const tailwindcss = require('tailwindcss');
  |
  */
 
-mix.ts('resources/ts/app.ts', 'public/ts')
+ mix.ts('resources/ts/app.ts', 'public/ts')
     .sass('resources/scss/app.scss', 'public/css')
     .copyDirectory('resources/assets', 'public/assets')
     .options({
-        postCss: [ tailwindcss('./tailwind.config.ts') ],
+        postCss: [tailwindcss('./tailwind.config.ts')],
     })
-    .version();
+    .minify(['public/ts/app.js', 'public/css/app.css'])
+    .webpackConfig({
+        optimization: {
+            splitChunks: {
+                chunks: 'all',
+                minSize: 0,
+            },
+        },
+    });
+
+if (mix.inProduction()) {
+    mix.version();
+}

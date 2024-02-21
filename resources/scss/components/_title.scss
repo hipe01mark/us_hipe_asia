@@ -1,0 +1,11 @@
+.c-title {
+    @apply text-center;
+
+    h2 {
+        @apply font-semibold text-4xl;
+    }
+
+    p {
+        @apply max-w-md mx-auto mt-2 text-gray-500 hyphens-auto break-normal;
+    }
+}
