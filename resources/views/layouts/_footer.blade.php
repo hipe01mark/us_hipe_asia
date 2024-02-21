@@ -1,5 +1,5 @@
 <footer class="l-footer">
-    <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
+    <div class="l-wrapper l-wrapper--fluid">
         <div class="l-footer__container">
             <img src="{{ asset('assets/images/logo_hipe.webp') }}" class="l-footer__logo" alt="Hipe Asia logo">
             <div class="l-footer__links">

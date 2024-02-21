@@ -1,5 +1,5 @@
 .s-clients {
-    @apply min-h-screen flex items-center justify-center bg-white;
+    @apply flex items-center justify-center bg-white;
 
     &__icon {
         @apply absolute size-20 -top-[10%] left-[3%] p-2 bg-gray-800 rounded-full items-center;

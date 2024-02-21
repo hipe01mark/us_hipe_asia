@@ -2,10 +2,10 @@
     @apply relative w-full mx-auto;
     
     &--fluid {
-        @apply mx-auto px-10 md:px-[6rem] xl:px-[12rem];
+        @apply mx-auto px-10 md:px-[6rem] xl:px-[12rem] max-w-[110rem];
     }
 
     &--padded-y {
-        @apply py-8
+        @apply py-32;
     }
 }

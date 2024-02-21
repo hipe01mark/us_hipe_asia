@@ -1,5 +1,5 @@
 <section id="client-insight" class="s-clients">
-    <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
+    <div class="l-wrapper l-wrapper--fluid">
         <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="s-clients__icon">
         <div class="s-clients__background"></div>
         <div class="s-clients__container">
@@ -97,11 +97,3 @@
         </div>
     </div>
 </section>
-
-@section('custom-scripts')
-    <script>
-        window.addEventListener('load', () => {
-            ClientControllerInstance.initSwiper();
-        });
-    </script>
-@endsection

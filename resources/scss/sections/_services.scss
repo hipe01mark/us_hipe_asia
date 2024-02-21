@@ -1,0 +1,25 @@
+.s-services {
+    @apply relative;
+
+    &__content {
+        @apply grid md:grid-cols-2 gap-10 mt-10;
+    }
+
+    &__item {
+        @apply flex gap-4 items-start;
+    }
+
+    &__svg-bg {
+        @apply text-primary bg-red-500/10 p-3 rounded-full;
+    }
+
+    &__description {
+        h3 {
+            @apply font-semibold text-xl;
+        }
+
+        p {
+            @apply mt-1 text-gray-500 hyphens-auto break-normal;
+        }
+    }
+}
