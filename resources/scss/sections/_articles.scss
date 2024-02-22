@@ -1,0 +1,43 @@
+.s-articles {
+    @apply relative;
+
+    &__items {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center;
+    }
+
+    &__image {
+        @apply w-full;
+    }
+
+    &__card {
+        @apply max-w-md rounded overflow-hidden shadow-lg relative bottom-[30%];
+    }
+
+    &__content {
+        @apply py-3 px-5;
+    }
+
+    &__header {
+        @apply flex flex-col;
+    }
+
+    &__title {
+        @apply flex justify-between mb-2;
+
+        &__main {
+            @apply font-bold text-xl;
+        }
+
+        &__date {
+            @apply text-[1rem];
+        }
+    }
+
+    &__body {
+        @apply text-gray-700 text-base line-clamp-3 hyphens-auto break-normal;
+    }
+
+    &__footer {
+        @apply flex flex-row gap-1 mt-4 mb-2;
+    }
+}

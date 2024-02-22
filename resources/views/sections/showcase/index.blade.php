@@ -3,10 +3,10 @@
     <div class="s-showcase__opacity"></div>
     <div class="s-showcase__banner l-wrapper l-wrapper--fluid">
         <div class="s-showcase__trial">
-            <span class="c-chips">
-                Trial
+            <span class="c-chips c-chips--red">
+                TRIAL
             </span>
-            <span class="mr-2 c-chips__desc">
+            <span class="mx-2 c-chips__desc">
                 Save now and apply for free for 2 weeks
             </span>
         </div>
