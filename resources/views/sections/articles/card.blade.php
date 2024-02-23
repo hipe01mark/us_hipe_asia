@@ -1,5 +1,9 @@
 <div class="s-articles__card">
-    <img class="s-articles__image" src="{{ asset('assets/images/showcase/homepage.webp') }}" alt="Sunset in the mountains">
+    <img class="s-articles__image" 
+        src="{{ asset('assets/images/showcase/homepage.webp') }}"
+        width="100%"
+        height="100%"
+        alt="Sunset in the mountains">
     <div class="s-articles__content">
         <div class="s-articles__header">
             <div class="s-articles__title">
