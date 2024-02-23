@@ -7,6 +7,7 @@
         @include('sections.clients-insight.index')
         @include('sections.services.index')
         @include('sections.benefits.index')
+        @include('sections.companies.index')
     </div>
 @endsection
 
