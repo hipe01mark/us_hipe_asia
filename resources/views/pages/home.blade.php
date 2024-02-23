@@ -6,7 +6,6 @@
         @include('sections.articles.index')
         @include('sections.clients-insight.index')
         @include('sections.services.index')
-        @include('sections.benefits.index')
     </div>
 @endsection
 

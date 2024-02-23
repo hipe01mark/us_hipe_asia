@@ -6,10 +6,6 @@
     }
 
     &--padded-y {
-        @apply py-14;
-    }
-
-    &--flex-row {
-        @apply flex flex-row flex-wrap gap-4;
+        @apply py-32;
     }
 }
