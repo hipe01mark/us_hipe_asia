@@ -2,7 +2,6 @@
     @apply relative;
 
     &__image {
-        background-image: url('/assets/images/showcase/homepage.webp');
         @apply w-full max-h-full bg-cover bg-fixed bg-center object-cover h-[100vh];
 
         @screen md {

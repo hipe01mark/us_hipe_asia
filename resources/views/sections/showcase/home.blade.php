@@ -1,5 +1,5 @@
 <section id="section" class="s-showcase">
-    <div class="s-showcase__image" />
+    <div class="s-showcase__image" style="background-image: url('/assets/images/showcase/home.webp');" />
     <div class="s-showcase__opacity"></div>
     <div class="s-showcase__banner l-wrapper l-wrapper--fluid">
         <div class="s-showcase__trial">

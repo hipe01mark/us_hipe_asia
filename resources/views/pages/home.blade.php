@@ -2,7 +2,7 @@
 
 @section('contents')
     <div class="p-home">
-        @include('sections.showcase.index')
+        @include('sections.showcase.home')
         @include('sections.articles.index')
         @include('sections.clients-insight.index')
         @include('sections.services.index')
