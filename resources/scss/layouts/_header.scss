@@ -14,10 +14,6 @@ header {
             }
         }
 
-        .l-header__button {
-            @apply text-primary border-primary;
-        }
-
         .l-header__side-btn {
             @apply text-white;
         }
@@ -49,10 +45,6 @@ header {
 
     &__button {
         @apply hidden text-white border border-white uppercase font-medium rounded-lg text-base px-4 py-2 text-center;
-
-        &:hover {
-            @apply bg-primary text-white border-white;
-        }
 
         @screen md {
             @apply flex;

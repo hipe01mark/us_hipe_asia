@@ -6,8 +6,8 @@
                     width="100%" height="100%">
             </a>
             <nav class="l-header__nav">
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
+                <a href="{{ route('home.index') }}">Home</a>
+                <a href="{{ route('services.index') }}">Services / Pricing</a>
                 <a href="#">Articles</a>
                 <a href="#">About Us</a>
             </nav>
@@ -25,8 +25,8 @@
                     @include('components.svg.close')
                 </button>
                 <div class="l-header__items">
-                    <a href="#">Home</a>
-                    <a href="#">Portfolio</a>
+                    <a href="{{ route('home.index') }}">Home</a>
+                    <a href="{{ route('services.index') }}">Services / Pricing</a>
                     <a href="#">Articles</a>
                     <a href="#">About Us</a>
                     <a href="#">Contact Us</a>

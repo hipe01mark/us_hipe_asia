@@ -12,4 +12,8 @@
     &--flex-row {
         @apply flex flex-row flex-wrap gap-4;
     }
+
+    &--centered {
+        @apply text-center items-center;
+    }
 }

@@ -1,6 +1,6 @@
 <div class="s-articles__card">
     <img class="s-articles__image" 
-        src="{{ asset('assets/images/showcase/homepage.webp') }}"
+        src="{{ asset('assets/images/showcase/services.webp') }}"
         width="100%"
         height="100%"
         alt="Sunset in the mountains">
