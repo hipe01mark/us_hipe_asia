@@ -1,6 +1,13 @@
 .c-buttons {
-    @apply
-    w-fit focus:outline-none text-white bg-primary
-    focus:ring-4 font-medium rounded-lg text-sm md:text-lg px-5 
+    &--rounded {
+        @apply w-fit focus:outline-none text-white bg-primary
+        focus:ring-4 font-medium rounded-lg text-sm md:text-lg px-5 
+        py-2.5 me-2 mb-2;
+    }
+
+    &--simple {
+        @apply w-fit focus:outline-none text-white bg-primary
+    focus:ring-4 font-medium text-lg px-5 
     py-2.5 me-2 mb-2;
+    }
 }

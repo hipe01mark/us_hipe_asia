@@ -36,7 +36,7 @@
         @apply flex flex-row gap-2 items-center mt-2;
 
         button {
-            @apply mt-3 c-buttons uppercase;
+            @apply mt-3 c-buttons--rounded uppercase;
         }
 
         a {

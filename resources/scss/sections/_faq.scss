@@ -1,0 +1,33 @@
+.s-faq {
+    @apply relative z-[1];
+
+    &__content {
+        @apply mt-8;
+    }
+
+    &__banner {
+        @apply relative bg-gray-900 py-16 pl-[5%] mt-16;
+
+        &--left {
+            @apply relative z-10;
+
+            h3 {
+                @apply text-2xl pb-4 font-semibold text-white;
+            }
+    
+            p {
+                @apply text-lg pb-4 text-white;
+            }
+        }
+
+        img {
+            @apply absolute bottom-0 right-0 h-[100%] w-auto object-cover;
+
+            @screen md {
+                @apply right-[4%]
+            }
+        }
+    }
+
+
+}

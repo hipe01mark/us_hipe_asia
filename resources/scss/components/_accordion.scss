@@ -1,0 +1,17 @@
+.c-accordion {
+    &__title {
+        @apply flex items-center justify-between w-full py-5 text-xl font-semibold rtl:text-right text-gray-600 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3;
+    }
+
+    &__answer {
+        @apply py-5 border-b border-gray-200 dark:border-gray-700;
+    }
+
+    &__description {
+        @apply mb-2 text-gray-500 dark:text-gray-400;
+    }
+
+    &__caption {
+        @apply text-gray-500 dark:text-gray-400;
+    }
+}
