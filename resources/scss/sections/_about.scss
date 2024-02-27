@@ -28,10 +28,10 @@
                 @apply flex flex-col justify-start items-start gap-2 xl:gap-1;
 
                 h1 {
-                    @apply uppercase text-xl tracking-widest text-gray-400 sm:text-2xl 2xl:tracking-widest;
+                    @apply uppercase text-xl tracking-widest text-gray-600 sm:text-2xl 2xl:tracking-widest;
                 }
 
-                h3 {
+                h2 {
                     @apply font-bold text-4xl my-2 text-gray-800 tracking-wide;
 
                     @screen md {
