@@ -1,33 +1,35 @@
 .s-faq {
     @apply relative z-[1];
 
+    &__container {
+        @apply gap-16 items-start mx-auto max-w-screen-xl lg:grid lg:grid-cols-2;
+
+        h3 {
+            @apply text-4xl pb-4 font-semibold;
+        }
+    }
+
     &__content {
-        @apply mt-8;
+        @apply relative bg-white;
     }
 
-    &__banner {
-        @apply relative bg-gray-900 py-16 pl-[5%] mt-16;
+    &__left {
+        @apply relative bg-white pb-4;
 
-        &--left {
-            @apply relative z-10;
-
-            h3 {
-                @apply text-2xl pb-4 font-semibold text-white;
-            }
-    
-            p {
-                @apply text-lg pb-4 text-white;
-            }
-        }
-
-        img {
-            @apply absolute bottom-0 right-0 h-[100%] w-auto object-cover;
-
-            @screen md {
-                @apply right-[4%]
-            }
+        p {
+            @apply text-justify text-sm text-gray-500 pb-4;
         }
     }
 
+    &__frame {
+        @apply relative z-10 h-[19rem] mb-4;
 
+        &--img1 {
+            @apply absolute left-[10%] top-0 rounded-lg h-[15rem] w-auto;
+        }
+
+        &--img2 {
+            @apply absolute right-[10%] bottom-[10%] rounded-lg h-[15rem] w-auto;
+        }
+    }
 }
