@@ -8,8 +8,8 @@
             </div>
             <div class="s-about__container-right">
                 <div class="content">
-                    <h1>Who we are</h1>
-                    <h2>Experience the essence of HiPE</h2>
+                    <h2>Who we are</h2>
+                    <h3>Experience the essence of HiPE</h3>
                     <p>HiPE is your trusted partner for innovative IT solutions. Our team of skilled Filipino engineers
                         excels in web and mobile development, design, and maintenance. We're committed to bringing your
                         vision to life and fostering lasting partnerships built on trust and excellence.</p>
