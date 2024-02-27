@@ -52,7 +52,7 @@
                 }
 
                 p {
-                    @apply text-lg text-gray-500 lg:text-xl;
+                    @apply text-lg text-gray-500 lg:text-xl hyphens-auto break-normal;
                     text-align: justify;
                 }
             }

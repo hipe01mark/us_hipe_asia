@@ -10,12 +10,10 @@
                 <div class="content">
                     <h1><span class='title-word title-word1'>Who</span><span class='title-word title-word2'>
                             we</span><span class='title-word title-word3'> are</span></h1>
-                    <h3>Why HiPE could be right for you?</h3>
-                    <p>We offer a 24/7 operations tailored to fit your schedule whatever you need, project-based
-                        expertise,
-                        or the on-going support of full-time professionals. You can trust HiPE to deliver exceptional
-                        results
-                        and fostering enduring partnerships.</p>
+                    <h3>Experience the essence of HiPE</h3>
+                    <p>HiPE is your trusted partner for innovative IT solutions. Our team of skilled Filipino engineers
+                        excels in web and mobile development, design, and maintenance. We're committed to bringing your
+                        vision to life and fostering lasting partnerships built on trust and excellence.</p>
                 </div>
                 <div class="image">
                     <img src="../../../assets/images/about/about_img.webp" alt="about-hipe">
