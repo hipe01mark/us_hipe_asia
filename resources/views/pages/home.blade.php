@@ -5,6 +5,7 @@
         @include('sections.showcase.home')
         @include('sections.articles.index')
         @include('sections.clients-insight.index')
+        @include('sections.about-us.index')
         @include('sections.services.index')
         @include('sections.benefits.index')
         @include('sections.companies.index')
