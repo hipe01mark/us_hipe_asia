@@ -1,7 +1,5 @@
 <section id="client-insight" class="s-clients">
-    <div class="l-wrapper l-wrapper--fluid">
-        <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="s-clients__icon">
-        <div class="s-clients__background"></div>
+    <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
         <div class="s-clients__container">
             <div class="s-clients__label">
                 <h1>Clients Insight</h1>
@@ -20,6 +18,7 @@
                                 <div class="card-image">
                                     <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
                                 </div>
+                                <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="content-icon">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -38,6 +37,7 @@
                                 <div class="card-image">
                                     <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
                                 </div>
+                                <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="content-icon">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -53,6 +53,7 @@
                                 <div class="card-image">
                                     <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
                                 </div>
+                                <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="content-icon">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -68,6 +69,7 @@
                                 <div class="card-image">
                                     <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
                                 </div>
+                                <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="content-icon">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -83,6 +85,7 @@
                                 <div class="card-image">
                                     <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
                                 </div>
+                                <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="content-icon">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -95,5 +98,6 @@
                 </div>
             </div>
         </div>
+        <div class="s-clients__background"><img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="s-clients__icon"></div>
     </div>
 </section>

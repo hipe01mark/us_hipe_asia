@@ -1,29 +1,29 @@
 .s-clients {
-    @apply flex items-center justify-center bg-white mt-10;
+    @apply relative flex items-center justify-center bg-white;
 
     &__icon {
-        @apply absolute size-20 -top-[10%] left-[3%] p-2 bg-gray-800 rounded-full items-center;
+        @apply absolute hidden size-20 -top-[4.50rem] p-2 bg-gray-800 rounded-full items-center;
         z-index: 1;
 
         @screen sm {
-            @apply size-28 -top-[5%] left-[5%] p-4 block;
+            @apply size-28 left-[5%] p-4 block;
         }
 
         @screen md {
-            @apply -top-[7%] left-[7%];
+            @apply size-32;
         }
 
         @screen lg {
-            @apply size-32 p-5 -top-[17%] left-[12%];
+            @apply size-32 p-5;
         }
 
         @screen 2xl {
-            @apply size-36 p-6 left-[10%];
+            @apply size-36 p-6;
         }
     }
 
     &__background {
-        @apply absolute inset-x-0 inset-y-20 bg-[#F1F1F1] w-[100%] h-[76%];
+        @apply absolute inset-x-0 inset-y-24 bg-[#F1F1F1] w-[100%] h-[75%];
         z-index: 0;
 
         @screen sm {
@@ -31,20 +31,24 @@
         }
 
         @screen md {
-            @apply inset-x-8 inset-y-6 w-[80%] h-[90%];
+            @apply inset-x-7 inset-y-11 w-[81%] h-[85%];
         }
 
         @screen lg {
-            @apply absolute inset-x-20 -inset-y-6 bg-[#F1F1F1] w-[70%] h-[110%];
+            @apply inset-x-20 inset-y-8 w-[70%] h-[90%];
         }
 
         @screen xl {
-            @apply absolute inset-x-36 -inset-y-10 bg-[#F1F1F1] w-[75%] h-[115%];
+            @apply inset-x-36 inset-y-8 w-[65%];
+        }
+
+        @screen 2xl {
+            @apply inset-x-36 inset-y-8 w-[75%];
         }
     }
 
     &__container {
-        @apply flex items-center flex-col justify-center w-full sm:flex-row sm:gap-9 md:gap-12 lg:gap-16 2xl:gap-40;
+        @apply relative flex items-center flex-col justify-center w-full sm:flex-row sm:gap-9 md:gap-12 lg:gap-16 2xl:gap-40;
     }
 
     &__label {
@@ -94,6 +98,10 @@
                         @apply bg-white;
                         border-radius: 0 25px 0 0;
                     }
+
+                    .content-icon {
+                        @apply absolute size-8 p-1 bg-gray-800 rounded-full -bottom-4 left-4;
+                    }
                 }
 
                 &-image {
@@ -116,7 +124,7 @@
                     }
 
                     .description {
-                        @apply text-xs text-gray-800 mb-4 sm:text-xs lg:text-sm;
+                        @apply text-xs text-gray-800 mb-4 sm:text-xs lg:text-sm mt-2;
                         text-align: justify;
                         hyphens: auto;
                         z-index: 1;
