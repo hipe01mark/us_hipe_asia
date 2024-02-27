@@ -1,0 +1,95 @@
+.s-about {
+    @apply flex items-center flex-col justify-center relative;
+
+    &__container {
+        @apply relative;
+
+        @screen xl {
+            @apply grid grid-cols-3 gap-9;
+        }
+
+        @screen 2xl {
+            @apply gap-36;
+        }
+
+        &-left {
+            @apply hidden xl:block xl:col-span-1;
+            z-index: -1;
+
+            .image--bg {
+                @apply bg-gradient-to-tr from-gray-500 via-transparent to-transparent;
+            }
+        }
+
+        &-right {
+            @apply col-span-2 flex flex-col justify-center gap-5;
+
+            .content {
+                @apply flex flex-col justify-start items-start gap-2 xl:gap-1;
+
+                h2 {
+                    @apply uppercase text-xl tracking-widest text-gray-600 sm:text-2xl 2xl:tracking-widest;
+                }
+
+                h3 {
+                    @apply font-bold text-4xl my-2 text-gray-800 tracking-wide;
+
+                    @screen md {
+                        @apply tracking-normal my-4;
+                    }
+
+                    @screen lg {
+                        @apply tracking-wide;
+                    }
+
+                    @screen xl {
+                        @apply text-3xl my-2;
+                    }
+
+                    @screen 2xl {
+                        @apply text-5xl my-4 tracking-wider;
+                    }
+                }
+
+                p {
+                    @apply text-lg text-gray-500 lg:text-xl hyphens-auto break-normal;
+                    text-align: justify;
+                }
+            }
+
+            .image {
+                @apply flex justify-center items-center;
+
+                img {
+                    @apply w-[27rem] h-[14rem];
+                }
+
+                @screen md {
+                    img {
+                        @apply w-[27rem] h-[14rem];
+                    }
+                }
+
+                @screen lg {
+                    img {
+                        @apply w-[29rem] h-[15rem];
+                    }
+                }
+
+                @screen xl {
+                    img {
+                        @apply w-[70%] h-[100%];
+                    }
+                }
+
+                @screen 2xl {
+                    @apply flex justify-center items-center;
+
+                    img {
+                        @apply w-[70%] h-[100%];
+                    }
+                }
+            }
+        }
+    }
+}
