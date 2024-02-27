@@ -1,7 +1,5 @@
-<section id="client-insight" class="s-clients">
-    <div class="l-wrapper l-wrapper--fluid">
-        <img src="../../assets/images/quote_icon.webp" alt="quote-icon" class="s-clients__icon">
-        <div class="s-clients__background"></div>
+<section id="client-insight" id="client-insight" class="s-clients">
+    <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
         <div class="s-clients__container">
             <div class="s-clients__label">
                 <h1>Clients Insight</h1>
@@ -18,8 +16,11 @@
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
-                                    <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
+                                    <img src="{{ mix('assets/images/client_icon.webp') }}" alt="quote-icon"
+                                        class="card-img" width="100%" height="100%">
                                 </div>
+                                <img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                                    class="content-icon" width="100%" height="100%">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -36,8 +37,11 @@
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
-                                    <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
+                                    <img src="{{ mix('assets/images/client_icon.webp') }}" alt="quote-icon"
+                                        class="card-img" width="100%" height="100%">
                                 </div>
+                                <img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                                    class="content-icon" width="100%" height="100%">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -51,8 +55,11 @@
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
-                                    <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
+                                    <img src="{{ mix('assets/images/client_icon.webp') }}" alt="quote-icon"
+                                        class="card-img" width="100%" height="100%">
                                 </div>
+                                <img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                                    class="content-icon" width="100%" height="100%">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -66,8 +73,11 @@
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
-                                    <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
+                                    <img src="{{ mix('assets/images/client_icon.webp') }}" alt="quote-icon"
+                                        class="card-img" width="100%" height="100%">
                                 </div>
+                                <img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                                    class="content-icon" width="100%" height="100%">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -81,8 +91,11 @@
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
-                                    <img src="../../assets/images/client_icon.webp" alt="client-icon" class="card-img">
+                                    <img src="{{ mix('assets/images/client_icon.webp') }}" alt="quote-icon"
+                                        class="card-img" width="100%" height="100%">
                                 </div>
+                                <img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                                    class="content-icon" width="100%" height="100%">
                             </div>
                             <div class="card-content">
                                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -95,5 +108,7 @@
                 </div>
             </div>
         </div>
+        <div class="s-clients__background"><img src="{{ mix('assets/images/quote_icon.webp') }}" alt="quote-icon"
+                class="s-clients__icon" width="100%" height="100%"></div>
     </div>
 </section>
