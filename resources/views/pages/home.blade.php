@@ -9,6 +9,7 @@
         @include('sections.services.index')
         @include('sections.benefits.index')
         @include('sections.companies.index')
+        @include('sections.faq.index')
     </div>
 @endsection
 

@@ -1,0 +1,82 @@
+.c-accordion {
+    @apply relative w-full;
+
+    &__container {
+        @apply text-center list-none;
+    }
+
+    &__item {
+        h2 {
+            @apply block text-primary duration-200 normal-case pt-[15px] pl-[15px] text-lg font-medium text-left cursor-pointer;
+        }
+
+        p {
+            @apply relative inline-block opacity-100 text-justify z-[2] max-h-[250px] pr-[50px] pl-[15px] mt-[5px] mb-[15px] overflow-hidden text-gray-500 text-sm;
+            will-change: max-height;
+            contain: layout;
+            transform: translate(0, 0);
+            transition: 0.3s opacity, 0.6s max-height;
+            hyphens: auto;
+        }
+    }
+
+    &__container,
+    &__item {
+        @apply relative overflow-hidden p-0 m-0 bg-white shadow-md;
+        box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .transition, p, ul li i:before, ul li i:after {
+        @apply transition-all duration-300;
+    }
+
+    &__contaier &__item + &__item {
+        @apply mt-[15px];
+    }
+
+    &__contaier &__item:last-of-type {
+        @apply pb-0;
+    }
+
+    &__container
+    &__item i {
+        @apply absolute mt-[28px] right-[25px];
+        transform: translate(-6px, 0);
+
+        &:before,
+        &:after {
+            @apply absolute bg-primary w-[3px] h-[9px];
+            content: "";
+        }
+
+        &:before {
+            transform: translate(-2px, 0) rotate(45deg);
+        }
+
+        &:after {
+            transform: translate(2px, 0) rotate(-45deg);
+        }
+    }
+
+    &__container &__item input[type="checkbox"] {
+        @apply absolute cursor-pointer w-full h-full z-[3] opacity-0;
+        touch-action: manipulation;
+
+        &:checked ~ h2 {
+            @apply text-gray-900;
+        }
+
+        &:checked ~ p {
+            @apply max-h-0 opacity-0 duration-300;
+        }
+
+        &:checked ~ i:before {
+            transform: translate(2px, 0) rotate(45deg);
+        }
+
+        &:checked ~ i:after {
+            transform: translate(-2px, 0) rotate(-45deg);
+        }
+    }
+}
