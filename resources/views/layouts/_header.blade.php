@@ -29,7 +29,10 @@
                     <a href="{{ route('services.index') }}">Services / Pricing</a>
                     <a href="#">Articles</a>
                     <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#" class='contact'>Contact Us</a>
+                </div>
+                <div class="l-header__copyright">
+                    <span>Copyright &copy; 2024 HiPE Japan Inc.
                 </div>
             </div>
         </div>
