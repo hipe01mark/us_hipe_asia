@@ -5,7 +5,7 @@
             <p class="c-title__desc">Advantages of using HiPE Services</p>
         </div>
     
-        <div class="l-wrapper--flex-row mt-10">
+        <div class="l-wrapper--three-col">
             <div class="s-benefits__card">
                 <div
                     class="s-benefits__image" style="background-image: url('{{ asset('assets/images/benefits/no-facility.webp') }}');">

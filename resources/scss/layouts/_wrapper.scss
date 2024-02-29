@@ -6,11 +6,19 @@
     }
 
     &--padded-y {
-        @apply py-14;
+        @apply py-8 md:py-14;
     }
 
     &--flex-row {
-        @apply flex flex-col md:flex-row gap-4;
+        @apply flex flex-wrap justify-center;
+    }
+    
+    &--one-col {
+        @apply grid grid-cols-1 gap-3;
+    }
+
+    &--three-col {
+        @apply grid grid-cols-1 lg:grid-cols-3 gap-3 justify-items-center;
     }
 
     &--centered {

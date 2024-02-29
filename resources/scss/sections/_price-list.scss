@@ -1,0 +1,25 @@
+.s-pricelist {
+    &__container {
+        @apply w-full px-4;
+    }
+
+    &__card {
+        @apply relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-[50px];
+    }
+
+    &__title {
+        @apply mb-3 block text-lg font-semibold text-primary;
+    }
+
+    &__amount {
+        @apply mb-5 text-[42px] font-bold dark:text-white;
+    }
+
+    &__publication {
+        @apply text-base font-medium;
+    }
+
+    &__description {
+        @apply mb-8 border-b pb-8 text-base;
+    }
+}

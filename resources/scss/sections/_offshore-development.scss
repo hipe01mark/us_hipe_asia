@@ -1,7 +1,7 @@
 .s-offshore-development {
     &__container {
-        @apply gap-16 items-center mx-auto 
-        max-w-screen-xl lg:grid lg:grid-cols-2;
+        @apply items-center mx-auto max-w-screen-xl 
+        grid lg:gap-16 lg:grid-cols-2 gap-10 grid-cols-1;
     }
 
     &__images {

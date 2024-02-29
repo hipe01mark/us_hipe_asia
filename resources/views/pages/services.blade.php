@@ -4,7 +4,8 @@
     <div class="p-services">
         @include('sections.showcase.services')
         @include('sections.offshore-development.index')
-        @include('sections.faq.index')
         @include('sections.projects.index')
+        @include('sections.price-list.index')
+        @include('sections.faq.index')
     </div>
 @endsection
