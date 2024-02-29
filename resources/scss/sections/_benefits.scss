@@ -2,7 +2,7 @@
     
     &__card {
         @apply 
-        relative grid h-[35rem] w-full max-w-[28rem] flex-col items-end 
+        relative grid h-[60vh] w-full max-w-[28rem] flex-col items-end 
         justify-center overflow-hidden rounded-xl bg-white bg-clip-border 
         text-center text-gray-700;
     }

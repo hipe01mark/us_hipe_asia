@@ -1,8 +1,8 @@
 <section id="benefits" class="s-benefits">
     <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
-        <div class="c-title">
-            <h2>Your Benefits</h2>
-            <p>Advantages of using HiPE Services</p>
+        <div class="c-title c-title--centered">
+            <h2 class="c-title__main">Your Benefits</h2>
+            <p class="c-title__desc">Advantages of using HiPE Services</p>
         </div>
     
         <div class="l-wrapper--flex-row mt-10">
@@ -26,7 +26,7 @@
             <div class="s-benefits__card">
                 <div
                     class="s-benefits__image" style="background-image: url('{{ asset('assets/images/benefits/reduce-cost.webp') }}');">
-                    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                    <div class="s-benefits__image--inset"></div>
                 </div>
                 <div class="s-benefits__content">
                     <h2>
@@ -42,7 +42,7 @@
             <div class="s-benefits__card">
                 <div
                     class="s-benefits__image" style="background-image: url('{{ asset('assets/images/benefits/no-contract-risk.webp') }}');">
-                    <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+                    <div class="s-benefits__image--inset"></div>
                 </div>
                 <div class="s-benefits__content">
                     <h2>

@@ -1,10 +1,8 @@
 <section id="companies" class="s-companies">
     <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
-        <div class="c-title ">
-            <h2>Our clients</h2>
-        </div>
-        <div class="s-companies__description ">
-            <p>We are committed to deliver the highest standard of service to our clients</p>
+        <div class="c-title c-title--centered">
+            <h2 class="c-title__main">Our clients</h2>
+            <p class="c-title__desc">We are committed to deliver the highest standard of service to our clients</p>
         </div>
         <div class="s-companies__logos parent">
             @for ($i = 1; $i <= 10; $i++)

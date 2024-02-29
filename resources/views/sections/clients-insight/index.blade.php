@@ -2,7 +2,7 @@
     <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
         <div class="s-clients__container">
             <div class="s-clients__label">
-                <h1>Clients Insight</h1>
+                <h2>Clients Insight</h2>
                 <p>We, at HiPE, maintains a long term relationship with our clients, and we never took this relationship
                     lightly. We are serious in the commitment that we made. <br><br>If you would like to become one of
                     our
