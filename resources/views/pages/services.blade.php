@@ -5,5 +5,6 @@
         @include('sections.showcase.services')
         @include('sections.offshore-development.index')
         @include('sections.faq.index')
+        @include('sections.projects.index')
     </div>
 @endsection

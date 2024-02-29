@@ -1,7 +1,8 @@
 <section id="section" class="s-services">
     <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
-        <div class="c-title">
-            <h2>Our Services</h2>
+        <div class="c-title c-title--centered">
+            <h2 class="c-title__main">Our Services</h2>
+            <p class="c-title__desc">Unlock tailored solutions with our offshore services. From cost-effective outsourcing to cutting-edge technology solutions.</p>
         </div>
     
         <div class="s-services__content">
