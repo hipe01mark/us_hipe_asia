@@ -21,6 +21,10 @@
         @apply grid grid-cols-1 lg:grid-cols-3 gap-3 justify-items-center;
     }
 
+    &--flex-row-lg {
+        @apply flex flex-col lg:flex-row gap-4;
+    }
+
     &--centered {
         @apply text-center items-center;
     }
