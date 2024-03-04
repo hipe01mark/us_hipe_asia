@@ -1,0 +1,44 @@
+.s-product {
+    @apply relative;
+
+    &__container {
+        @apply l-wrapper--flex-row-lg;
+    }
+
+    &__card {
+        @apply relative p-8 grid grid-cols-1 items-start justify-center h-[32rem] w-full overflow-hidden rounded-[10px] shadow-lg;
+        transition: transform 10s ease;
+
+        &:hover .s-product__header--icon > img {
+            transform: scale(1.05);
+        }
+    }
+
+    &__header {
+        @apply flex flex-col overflow-hidden items-center justify-center z-[1];
+
+        &--icon {
+            @apply p-4 rounded-full w-[6rem] bg-red-500/10 text-primary;
+        }
+
+        &--title {
+            @apply pt-8 font-semibold text-2xl text-gray-800;
+        }
+    }
+
+    &__body {
+        @apply flex flex-col overflow-hidden items-center justify-center pt-8 z-[1];
+
+        &--description {
+            @apply text-center text-base hyphens-auto text-gray-900;
+
+            @screen md {
+                @apply text-lg;
+            }
+        }
+    }
+
+    &__waves {
+        @apply absolute bottom-0 w-full h-[60%] bg-red-500/10;
+    }
+}
