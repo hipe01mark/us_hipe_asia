@@ -36,21 +36,19 @@
                 @foreach ($projectType['projects'] as $project)
                     <div :class="showCards == 'all' || showCards == {{$projectType['id']}} ? 'block' : 'hidden'"
                         class="s-projects__cards">
-                        <div class="relative mb-12">
-                            <div class="s-projects__container group">
-                                <div class="s-projects__image">
-                                    @php
-                                        $imagesArray = $project['images'] ? explode(' || ', $project['images']) : [];
-                                    @endphp
-                                    <img src="{{ env('CMS_API_URI') . 'storage/' . $imagesArray[0] }}"
-                                        class="animate-fade-in group-hover:scale-110"
-                                        alt="" />
-                                    <div class="s-projects__backdrop group-hover:opacity-0"></div>
-                                </div>
-                                <div class="s-projects__description group-hover:opacity-0">
-                                    <h2>{{ $project['title'] }}</h2>
-                                    <p>{{ $project['description'] }}</p>
-                                </div>
+                        <div class="s-projects__container group">
+                            <div class="s-projects__image">
+                                @php
+                                    $imagesArray = $project['images'] ? explode(' || ', $project['images']) : [];
+                                @endphp
+                                <img src="{{ env('CMS_API_URI') . 'storage/' . $imagesArray[0] }}"
+                                    class="animate-fade-in group-hover:scale-110"
+                                    alt="" />
+                                <div class="s-projects__backdrop group-hover:opacity-0"></div>
+                            </div>
+                            <div class="s-projects__description group-hover:opacity-0">
+                                <h2>{{ $project['title'] }}</h2>
+                                <p>{{ $project['description'] }}</p>
                             </div>
                         </div>
                     </div>

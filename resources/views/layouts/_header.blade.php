@@ -9,7 +9,7 @@
                 <a href="{{ route('home.index') }}">Home</a>
                 <a href="{{ route('services.index') }}">Services / Pricing</a>
                 <a href="#">Articles</a>
-                <a href="#">About Us</a>
+                <a href="{{ route('about-us.index') }}">About Us</a>
             </nav>
         </div>
         <button type="button" class="l-header__button">Contact Us</button>
@@ -28,7 +28,7 @@
                     <a href="{{ route('home.index') }}">Home</a>
                     <a href="{{ route('services.index') }}">Services / Pricing</a>
                     <a href="#">Articles</a>
-                    <a href="#">About Us</a>
+                    <a href="{{ route('about-us.index') }}">About Us</a>
                     <a href="#" class='contact'>Contact Us</a>
                 </div>
                 <div class="l-header__copyright">

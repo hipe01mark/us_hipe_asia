@@ -24,11 +24,11 @@
         mt-5 absolute inset-0 text-white flex flex-col justify-center;
 
         h1 {
-            @apply text-[2rem]/[2.75rem] lg:text-[2.875rem]/[1.2] xl:w-[60%] w-full font-bold;
+            @apply text-[2rem]/[2.75rem] lg:text-[2.3rem]/[1.2] xl:w-[50%] w-full font-bold hyphens-auto break-normal;
         }
 
         p {
-            @apply text-[1.20rem]/[1.75rem] lg:text-[1.4rem] mt-5 xl:w-2/4 w-full;
+            @apply text-[1.20rem]/[1.75rem] lg:text-[1.4rem] mt-5 xl:w-[50%] w-full hyphens-auto break-normal;
         }
     }
 
