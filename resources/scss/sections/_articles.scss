@@ -2,7 +2,7 @@
     @apply relative;
 
     &__items {
-        @apply l-wrapper--three-col gap-4 relative bottom-[15vh];
+        @apply l-wrapper--three-col gap-4;
     }
 
     &__image {

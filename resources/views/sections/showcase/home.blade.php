@@ -1,5 +1,5 @@
 <section id="section" class="s-showcase">
-    <div class="s-showcase__image" style="background-image: url('/assets/images/showcase/home.webp');" />
+    <div class="s-showcase__image !h-[100vh] md:!h-[90vh]" style="background-image: url('/assets/images/showcase/home.webp');" />
     <div class="s-showcase__opacity"></div>
     <div class="s-showcase__banner l-wrapper l-wrapper--fluid">
         <div class="s-showcase__trial">
@@ -11,7 +11,7 @@
             </span>
         </div>
         <h1>Philippine Offshore Lab-based Development for US</h1>
-        <p>Accelerate Innovation with Our Philippine Offshore Lab – Empowering US Businesses through Cutting-edge Development and Research Excellence.</p>
+        <p>Accelerate Innovation with Our Philippine Offshore Lab Empowering US Businesses through Cutting-edge Development and Research Excellence.</p>
         <div class="s-showcase__actions">
             <button type="button">
                 Learn More
