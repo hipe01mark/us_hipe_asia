@@ -1,0 +1,91 @@
+.s-development-process {
+  h2 {
+    @apply text-3xl sm:text-5xl text-gray-900 font-semibold mb-10 text-center;
+  }
+
+  &__component {
+    @apply flex flex-col lg:flex-row;
+  }
+
+  &__step1 {
+    @apply lg:-mr-[3rem] 2xl:-mr-[9rem];
+  }
+
+  &__step2 {
+    @apply lg:-mr-12 2xl:-mr-32;
+  }
+
+  &__step4 {
+    @apply lg:-ml-12 2xl:-ml-32;
+  }
+
+  &__step5 {
+    @apply lg:-ml-[3rem] 2xl:-ml-[9.5rem];
+  }
+
+  &__step1,
+  &__step2,
+  &__step3,
+  &__step4,
+  &__step5 {
+    @apply flex flex-row items-center mt-4 justify-center;
+
+    @screen lg {
+      @apply justify-normal flex-col mt-0;
+    }
+  }
+
+  &__container {
+    @apply flex items-center justify-center h-[6rem] w-[9rem];
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+
+    @screen md {
+      @apply h-[13rem] w-[14rem];
+    }
+
+    @screen 2xl {
+      @apply h-[14rem] w-[15rem];
+    }
+
+    svg {
+      @apply h-16 w-16 p-2;
+
+      @screen md {
+        @apply h-auto w-auto;
+      }
+    }
+  }
+
+  .hex1 {
+    @apply bg-gradient-to-r from-red-300 via-red-400/95 to-red-400/95;
+  }
+
+  .hex2 {
+    @apply bg-gradient-to-r from-red-400/95 via-red-500/90 to-red-500/90 lg:mt-[13.1rem] 2xl:mt-56;
+  }
+
+  .hex3 {
+    @apply bg-gradient-to-r from-red-500/90 via-red-500 to-red-500;
+  }
+
+  .hex4 {
+    @apply bg-gradient-to-r from-red-500 via-red-600/90 to-red-600/90 lg:mt-[13.1rem] 2xl:mt-56;
+  }
+
+  .hex5 {
+    @apply bg-gradient-to-r from-red-600/90 via-red-600/95 to-red-600;
+  }
+
+  &__content {
+    @apply border-t-[3px] border-l-[3px] border-red-300 p-2;
+
+    h3 {
+      @apply text-gray-900 text-base font-semibold uppercase tracking-wide sm:text-xl;
+    }
+
+    p {
+      @apply text-gray-500 text-xs mt-2 hyphens-auto text-justify sm:text-sm;
+    }
+  }
+}
