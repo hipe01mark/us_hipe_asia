@@ -1,8 +1,4 @@
 .s-development-process {
-  h2 {
-    @apply text-3xl sm:text-5xl text-gray-900 font-semibold mb-10 text-center;
-  }
-
   &__component {
     @apply flex flex-col lg:flex-row;
   }

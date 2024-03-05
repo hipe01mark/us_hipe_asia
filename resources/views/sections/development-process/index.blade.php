@@ -1,6 +1,10 @@
 <section id="development-process" class="s-development-process">
     <div class="l-wrapper l-wrapper--fluid l-wrapper--padded-y">
-        <h2>Development Process</h2>
+        <div class="c-title c-title--centered">
+            <h2 class="c-title__main">Development Process</h2>
+            <p class="c-title__desc">Our development approach is optimized for efficiency, leading projects from start to
+            finish with professionalism and precision.</p>
+        </div>
         <div class="s-development-process__component">
             <div class="s-development-process__step1">
                 <div class="s-development-process__content">
